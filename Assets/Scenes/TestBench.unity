@@ -319,11 +319,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 554747947296676308, guid: 63d516dec3fa21e40ae0725567ec21aa, type: 3}
       propertyPath: headBodyPositionOffset.y
-      value: 0
+      value: -0.6
       objectReference: {fileID: 0}
     - target: {fileID: 554747947296676308, guid: 63d516dec3fa21e40ae0725567ec21aa, type: 3}
       propertyPath: headBodyPositionOffset.z
-      value: 0
+      value: -0.14
       objectReference: {fileID: 0}
     - target: {fileID: 877350797715893281, guid: 63d516dec3fa21e40ae0725567ec21aa, type: 3}
       propertyPath: m_LocalPosition.x
@@ -492,10 +492,6 @@ PrefabInstance:
     - target: {fileID: 6377820708866322248, guid: 63d516dec3fa21e40ae0725567ec21aa, type: 3}
       propertyPath: m_IsActive
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7586360292306704597, guid: 63d516dec3fa21e40ae0725567ec21aa, type: 3}
-      propertyPath: m_SmoothMotionEnabled
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8502853366356225539, guid: 63d516dec3fa21e40ae0725567ec21aa, type: 3}
       propertyPath: m_IsActive
