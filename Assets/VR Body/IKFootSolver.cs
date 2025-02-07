@@ -18,6 +18,8 @@ public class IKFootSolver : MonoBehaviour
     [SerializeField] Vector3 footOffset = default;
 
     public Vector3 footRotOffset;
+
+    private Vector3 lastPosition;
     public float footYPosOffset = 0.1f;
 
     public float rayStartYOffset = 0;
@@ -34,12 +36,19 @@ public class IKFootSolver : MonoBehaviour
         currentPosition = newPosition = oldPosition = transform.position;
         currentNormal = newNormal = oldNormal = transform.up;
         lerp = 1;
+        lastPosition = transform.position;
     }
 
     // Update is called once per frame
 
     void Update()
     {
+        float distanceTraveled = Vector3.Distance(transform.position, lastPosition);
+        
+        speed = distanceTraveled / Time.deltaTime + 4;
+        
+        lastPosition = transform.position;
+
         transform.position = currentPosition + Vector3.up * footYPosOffset;
         transform.localRotation = Quaternion.Euler(footRotOffset);
 
